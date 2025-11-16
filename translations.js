@@ -324,6 +324,87 @@ const translations = {
             copyright: "© 2025 Hapsen. 保留所有权利。"
         }
     },
+    "zh-TW": {
+        nav: {
+            features: "功能",
+            security: "安全",
+            about: "關於",
+            getStarted: "開始使用"
+        },
+        hero: {
+            title: "本地部署的醫療AI",
+            subtitle: "用於患者工作流程管理和程序任務的網路隔離人工智慧。您的資料永不離開您的設施。",
+            requestDemo: "申請示範",
+            learnMore: "了解更多"
+        },
+        features: {
+            title: "為現代醫療工作流程而構建",
+            card1: {
+                title: "網路隔離",
+                description: "完全氣隙部署。您的患者資料保留在您的基礎設施內，確保最大程度的隱私和合規性。"
+            },
+            card2: {
+                title: "工作流程自動化",
+                description: "透過智慧自動化簡化患者接待、排程、文件製作和程序任務。"
+            },
+            card3: {
+                title: "本地AI",
+                description: "直接部署在您的設施中的最先進AI模型。無雲端依賴，無資料傳輸。"
+            },
+            card4: {
+                title: "程序卓越性",
+                description: "透過智慧檢查清單和即時決策支援引導臨床團隊完成複雜程序。"
+            },
+            card5: {
+                title: "無縫整合",
+                description: "與您現有的電子健康記錄和醫療系統配合使用，不會干擾當前工作流程。"
+            },
+            card6: {
+                title: "隱私設計",
+                description: "在構建時就考慮了醫療資料隱私要求。您的基礎設施，您的控制，您的合規路徑。"
+            }
+        },
+        security: {
+            title: "您的資料屬於您",
+            description: "傳統的醫療AI解決方案需要將敏感的患者資料發送到雲端。Hapsen不同。",
+            item1: {
+                title: "零外部連接",
+                description: "AI模型完全在您的網路邊界內執行"
+            },
+            item2: {
+                title: "本地部署",
+                description: "完全控制您的基礎設施和資料"
+            }
+        },
+        about: {
+            title: "轉變醫療營運",
+            paragraph1: "醫療服務提供者面臨著日益增加的行政負擔、複雜的工作流程和嚴格的資料隱私要求。Hapsen彌合了尖端AI能力與醫療獨特安全需求之間的差距。",
+            paragraph2: "我們的網路隔離AI平台使臨床團隊能夠專注於患者護理，同時自動化日常工作流程、減少錯誤並保持完全的資料主權。"
+        },
+        contact: {
+            title: "準備好轉變您的工作流程了嗎？",
+            description: "安排示範，了解Hapsen如何簡化您的醫療營運同時保護您的資料安全。",
+            form: {
+                name: "姓名",
+                email: "電子郵件",
+                organization: "組織",
+                phone: "電話",
+                message: "告訴我們您的需求",
+                submit: "申請示範",
+                sending: "發送中...",
+                success: "示範申請已發送！",
+                error: "提交表單時出現問題",
+                networkError: "網路錯誤。請重試。"
+            }
+        },
+        footer: {
+            tagline: "AI驅動的醫療工作流程管理",
+            product: "產品",
+            contact: "聯繫",
+            getInTouch: "聯繫我們",
+            copyright: "© 2025 Hapsen. 保留所有權利。"
+        }
+    },
     es: {
         nav: {
             features: "Características",

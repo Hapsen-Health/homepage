@@ -16,7 +16,11 @@ function getPreferredLanguage() {
         return 'ko';
     } else if (browserLang.startsWith('ja')) {
         return 'ja';
+    } else if (browserLang.startsWith('zh-TW') || browserLang.startsWith('zh-HK') || browserLang.startsWith('zh-MO')) {
+        // Traditional Chinese for Taiwan, Hong Kong, Macau
+        return 'zh-TW';
     } else if (browserLang.startsWith('zh')) {
+        // Simplified Chinese for mainland China and others
         return 'zh';
     } else if (browserLang.startsWith('es')) {
         return 'es';
@@ -69,7 +73,9 @@ function applyTranslations(lang) {
     // Update language button
     const langButton = document.querySelector('.current-lang');
     if (langButton) {
-        langButton.textContent = lang.toUpperCase();
+        // Display language code with special handling for zh-TW
+        const displayLang = lang === 'zh-TW' ? 'ZH-TW' : lang.toUpperCase();
+        langButton.textContent = displayLang;
     }
 
     // Update HTML lang attribute
