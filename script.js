@@ -10,8 +10,20 @@ function getPreferredLanguage() {
 
     // Check browser language
     const browserLang = navigator.language || navigator.userLanguage;
+
+    // Match browser language to supported languages
     if (browserLang.startsWith('ko')) {
         return 'ko';
+    } else if (browserLang.startsWith('ja')) {
+        return 'ja';
+    } else if (browserLang.startsWith('zh')) {
+        return 'zh';
+    } else if (browserLang.startsWith('es')) {
+        return 'es';
+    } else if (browserLang.startsWith('ar')) {
+        return 'ar';
+    } else if (browserLang.startsWith('pt')) {
+        return 'pt';
     }
 
     // Default to English
@@ -77,8 +89,11 @@ function applyTranslations(lang) {
 
 // Toggle between languages
 function toggleLanguage() {
+    const supportedLanguages = ['en', 'ko', 'ja', 'zh', 'es', 'ar', 'pt'];
     const currentLang = localStorage.getItem('preferredLanguage') || getPreferredLanguage();
-    const newLang = currentLang === 'en' ? 'ko' : 'en';
+    const currentIndex = supportedLanguages.indexOf(currentLang);
+    const nextIndex = (currentIndex + 1) % supportedLanguages.length;
+    const newLang = supportedLanguages[nextIndex];
     applyTranslations(newLang);
 }
 
