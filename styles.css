@@ -332,8 +332,11 @@ body {
 
 .hero-image img {
     width: 100%;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    aspect-ratio: 3 / 2;
 }
 
 /* Features Section */
@@ -449,8 +452,11 @@ body {
 
 .security-image img {
     width: 100%;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
 }
 
 /* About Section */
@@ -476,8 +482,11 @@ body {
 
 .about-image img {
     width: 100%;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
 }
 
 .about-text p {
